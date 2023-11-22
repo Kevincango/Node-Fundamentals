@@ -1,0 +1,13 @@
+Im
+a
+text
+file
+create
+so
+u
+can
+read
+me
+with
+a
+stream
