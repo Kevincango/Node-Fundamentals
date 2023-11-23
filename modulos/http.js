@@ -15,7 +15,8 @@ function router(req, res){
 
     switch(req.url){
         case '/':
-            res.write('<h1>Hello</h1>');
+            let hi = hello();
+            res.write(`<h1>${hi}</h1>`);
             res.end();
             break;
         default:
@@ -24,4 +25,7 @@ function router(req, res){
     }
 }
 
+function hello(){
+    return 'Hello my friend';
+}
 createServer(router).listen(3000);
